@@ -1,109 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aksha Sajeev">
+        <meta name="description" content="Assignment 2 Introduction to Javascript">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <script src="./assets/scripts/script.js" type="text/javascript"></script>
+
+    </head>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <body>
+        <header>
+            <p>BEST WAY TO WASTE TIME... SPEND TIME ON THIS WEBSITE!</p>
+        </header>
 
-    <title>Week 6: Array & Loops</title>
+        <section id="content">
 
-</head>
-<body>
-    <div class="container p-5">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Arrays and Loops</h1>
-                <h2> Github Title</h2>
-                <h3 id="output"></h3>
-                <h3 id="arrayLength"></h3>
-                <h3 id="arrayConcat"></h3>
-                <h3 id="arrayPop"></h3>
-                <h3 id="arrayPush"></h3>
-                <h3 id="arraySort"></h3>
-                <h3 id="arrayReverse"></h3>
-                <h3 id="spliced"></h3>
-                <h3 id="loopNames"></h3>
+            <div class="container1">   
+              <h1>The Most (In)Accurate Personality Test: Vetted by Doctor Google</h1><br>
+              <h2> Choose your favorite colors:</h2><br>
+              
+              <input type="checkbox" id="Color1" onclick="">
+              <label for="Color1">Red</label><br><br>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad dolorum eaque ea, aliquam qui, soluta rem expedita esse mollitia facere suscipit dolore asperiores dolorem? Fugit quod ea saepe dolorem.</p>
-                <p>Laboriosam nostrum in debitis aspernatur nulla repudiandae maiores, mollitia eaque rerum dicta libero magni similique perferendis dolorum accusamus dolore eum aliquam, ad facilis? Sed, dolor! Blanditiis quia molestiae eveniet soluta!</p>
-                <p>Illo corporis laudantium assumenda nesciunt maxime deserunt repellat cumque autem sed. Officia at quam ab ex. Aliquid libero error harum voluptatum quae voluptates minima voluptate nulla perspiciatis, placeat deserunt praesentium.</p>
-                <p>Nisi aliquam dicta incidunt quo quisquam possimus reprehenderit eius totam, quam exercitationem velit perferendis magni eos! Dolores autem aliquid, minus aperiam laborum distinctio facere laudantium ea recusandae temporibus voluptatum dignissimos.</p>
-                <p>Perferendis expedita quaerat voluptatem alias error reiciendis voluptatum cupiditate! Laborum quas perspiciatis dolores quam quo nobis, cumque illum, vitae, consequuntur et omnis quod? Tempora ullam ipsam quas, provident vel quia!</p>
-                <p>Quibusdam consectetur hic, nihil itaque illum nisi et magnam consequuntur ullam a alias. Dolorum consectetur suscipit magni ducimus aspernatur? Delectus eum praesentium voluptas nobis quod vitae, ratione deserunt perferendis ducimus.</p>
-                <p>Amet magnam velit, officiis, minima similique earum facere error repellendus quae, doloribus in exercitationem. Ipsam esse, quasi ullam ab corrupti, necessitatibus dolore eius officia voluptas cum labore voluptatem distinctio quia!</p>
-                <p>Repudiandae, repellat. Laborum voluptas voluptate odio. Soluta, maiores eveniet pariatur nulla minima dolorum? Dolorum, quibusdam temporibus. Tempore rerum blanditiis cupiditate, iure hic minima, excepturi reiciendis repellat facere unde, maiores enim?</p>
-                <p>Culpa non corrupti quia accusamus ex, esse voluptate, doloremque dolorum accusantium nostrum voluptatem? Recusandae odit voluptatibus dicta harum delectus veniam alias! Vero accusamus sit, voluptates facere deserunt pariatur autem eligendi.</p>
-                <p>Sequi praesentium incidunt suscipit dicta, mollitia amet ut libero quae! Ipsam minima error neque rem aut laudantium culpa eveniet accusamus dicta velit nesciunt et, iste possimus voluptate enim sit architecto.</p>
+              <input type="checkbox" id="Color2" onclick="">
+              <label for="Color2">Blue</label> <br><br>
+
+              <input type="checkbox" id="Color3" onclick="">
+              <label for="Color3">Green</label><br><br>
+
+              <h2> Choose your favorite snack:</h2><br>
+
+              <input type="checkbox" id="Snack1" onclick="">
+              <label for="Snack1">Chocolate</label><br><br>
+
+              <input type="checkbox" id="Snack2" onclick="">
+              <label for="Snack2">French Fries</label><br><br>
+
+              <input type="checkbox" id="Snack3" onclick="">
+              <label for="Snack3">Chips</label><br><br>
+
+              <h2> Choose your favorite weather:</h2><br>
+
+              <input type="checkbox" id="weather1" onclick="">
+              <label for="weather1">Cloudy</label><br><br>
+
+              <input type="checkbox" id="weather1" onclick="">
+              <label for="weather2">Sunny</label><br><br>
+
+              <input type="checkbox" id="weather1" onclick="">
+              <label for="weather3">Snowy</label><br><br>
+
+              <input type="submit" id="button" value="Submit" onclick="myFunction()">
+
+              <p id="text1" style="display:none">You have a cat personality! You are adorable!</p><br><br>
+              <img id="img1" style="display:none" src="./assets/images/cat.jpg" alt="Picture of a cat: Photo by Manja Vitolic on Unsplash">
+
+              <p id="text2" style="display:none">You have a dog personality! You are needy!</p><br><br>
+              <img id="img2" style="display:none" src="./assets/images/dog.jpg" alt="Picture of a dog: Photo by Victor Grabarczyk on Unsplash">
+
+              <p id="text3" style="display:none">You have a parrot personality! Very talkative!</p><br><br>
+              <img id="img3" style="display:none" src="./assets/images/parrot.jpg" alt="Picture of a parrot: Photo by Zdeněk Macháček on Unsplash">
+
+              <p id="text4" style="display:none">I am sorry!</p><br><br>
+              <img id="img4" style="display:none" src="./assets/images/joke.jpg" alt="Picture of some funny text: Photo by Brett Jordan on Unsplash">
+              
+
+
+
             </div>
-        </div>
-    </div>
-
-  <script>
-    //Declaring Arrays
-     var cars = ["Ford", "Chevy", "GMC", "Toyota", "Tesla", "Honda"," Hyundai"];
-     var americanCars = ["Ford", "Chevy", "GMC"];
-     var koreanCars = ["Hyundai", "Kia", "Genesys"];
-
-     //Accessing array elements
-     document.getElementById("output").innerHTML = cars[4];
-
-     //Checking the length of the array
-     document.getElementById("arrayLength").innerHTML = cars.length;
-
-     //Array Concatenation
-    //One way to do it: document.getElementById("arrayConcact").innerHTML = americanCars.concat(koreanCars);
-
-    let concatenatedArray = americanCars.concat(koreanCars);
-    document.getElementById("arrayConcat").innerHTML = concatenatedArray;
+      
+          </section>
     
-    //removing the last element in the concatenated Array
+    </body>
 
-    concatenatedArray.pop();
-    document.getElementById("arrayPop").innerHTML = concatenatedArray;
-    
-    //adding a new element after the last element in the concatenated Array
-    concatenatedArray.push("Subaru");
-    document.getElementById("arrayPush").innerHTML = concatenatedArray;
-
-    //Sorting the array (ascending)
-    let sortedCars = concatenatedArray.sort();
-    document.getElementById("arraySort").innerHTML = sortedCars;
-
-    //Sorting the array (descending)
-    let sortingReverseCars = concatenatedArray.reverse();
-    document.getElementById("arrayReverse").innerHTML = sortingReverseCars;
-
-    //testing out splice
-    for (i=0; i<1; i++){                                   //if I do i<=cars.length, the loop runs the first time and splices, but after that it has nothing to splice in the array. So there is no output
-        let splicedCars = concatenatedArray.splice(3, 2);
-        document.getElementById("spliced").innerHTML = splicedCars;
-    }
-
-    let carNamesArray = "";
-    for(i = 0; i < cars.length; i++){
-      console.log(cars[i]);
-      carNamesArray = carNamesArray + cars[i] + ", ";
-      document.getElementById("loopNames").innerHTML = carNamesArray;
-    }
-    
-    //Multiplication
-    const number = 7;
-    for (let i = 1; i<=10; i++){
-        const result = i* number;
-        console.log(`${i} x ${number} = ${result}`);
-    }
-
-    //Updating Paragraphs
-    const paragraphs = document.getElementsByTagName('p');
-    console.log(paragraphs);
-
-    for (let i=0; i< paragraphs.length; i++){
-        paragraphs[i].style.color = 'red';
-    }
-    </script>
-
-    
-</body>
 </html>
